@@ -1,5 +1,5 @@
 .livro__detail {
-    margin-top: 6%;
+  margin-top: 6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,19 +7,166 @@
   gap: 45px;
 }
 
-.livro__detail h1{
-    position: fixed;
-    top: 0;
-    left: 6%;
-    color: #025159;
+.livro__detail h1 {
+  position: fixed;
+  top: 0;
+  left: 6%;
+  color: #025159;
 }
 
-#capa {
+.capa {
+  display: flex;
+  flex-direction: column;
+}
+
+#capa__btn {
   display: none;
 }
 
 .btn__carrega__img {
-  background-color: #F28705;
+  background-color: #f28705;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 30px;
+  width: 40%;
+  text-align: center;
+}
+
+.capa__img {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 350px;
+  background-color: black;
+}
+
+.titulo {
+  width: 300px;
+}
+
+.titulo label {
+  font-size: 1.5rem;
+}
+
+.titulo input {
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.editora {
+  width: 300px;
+}
+
+.editora label {
+  font-size: 1.5rem;
+}
+
+.editora input {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.idioma {
+  width: 300px;
+}
+
+.idioma label {
+  font-size: 1.5rem;
+}
+
+.idioma input {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.dtPublicacao {
+  width: 300px;
+}
+
+.dtPublicacao label {
+  font-size: 1.5rem;
+}
+
+.dtPublicacao input {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 370px;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: rgb(243, 244, 245);
+}
+
+.adiciona___categoria {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+#nameCat {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.list__categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 7%;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 50px;
+}
+
+.item__categoria {
+  position: relative;
+  display: inline-block;
+  background-color: #03a696;
+  padding: 3px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.remove__btn {
+  border: none;
+  background-color: #03a696;
+  color: rgb(245, 24, 24);
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.remove__btn:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+}
+
+.btns__alteracoes {
+  background-color: #f28705;
   color: white;
   padding: 2px 5px;
   border: none;
@@ -28,69 +175,132 @@
   font-size: 1rem;
 }
 
-.capa__img{
-    margin-bottom: 15px;
-    width: 200px;
-    height: 250px;
-    background-color: black;
+.autores {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 370px;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: rgb(243, 244, 245);
 }
 
-.titulo{
-    width: 300px;
+.autores input {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
 }
 
-.titulo label {
-    font-size: 1.5rem;
+.adiciona__autor {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
 }
 
-.titulo input {
-    padding: 5px;
-    border-radius: 10px;
-    width: 100%;
-    font-size: 1.2rem;
+.cadastrar__autor {
+  background-color: white;
+  padding: 10px;
+  margin-top: 7%;
+  display: flex;
+  border-radius: 10px;
 }
 
-.editora{
-    width: 300px;
+.cadastrar__autor button {
+  background-color: #03a696;
+  color: white;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.editora label {
-    font-size: 1.5rem;
+.lista__autores {
+  margin-top: 7%;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.editora input {
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2rem;
+.lista__autores thead tr {
+  background-color: #038c8c;
+  color: #ffff;
+  text-decoration: uppercase;
+  font-weight: bold;
 }
 
-.idioma{
-    width: 300px;
+.lista__autores th,
+.lista__autores td {
+  border: 1px solid #dddddd;
+  padding: 5px 5px;
 }
 
-
-.idioma label {
-    font-size: 1.5rem;
+/* Linhas alternadas no corpo */
+.lista__autores tbody tr:nth-child(odd) {
+  background-color: #f3f3f3; /* Cor para linhas ímpares */
 }
 
-.idioma input {
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2rem;
+.lista__autores tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Cor para linhas pares */
 }
 
-.dtPublicacao{
-    width: 300px;
+/* Efeito de hover */
+.lista__autores tbody tr:hover {
+  background-color: #03a696; /* Cor ao passar o mouse */
 }
 
-
-.dtPublicacao label {
-    font-size: 1.5rem;
+/* Centralizar conteúdo das células */
+.lista__autores td {
+  text-align: center;
 }
 
-.dtPublicacao  input {
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2rem;
+.gerencia__autor{
+  margin-left: 3px;
+  display: flex;
+  gap: 5px;
 }
 
+.editar{
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.editar:hover{
+  background-color: rgb(137, 204, 37);
+  cursor: pointer;
+}
+
+.remover{
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.remover:hover {
+background-color: rgb(206, 2, 2);
+cursor: pointer;
+}
+
+.descricao{
+  margin-bottom: 10%;
+}
+
+.descricao label{
+ font-size:  1.2rem;
+}
+.descricao textarea {
+  width: 365px;
+  height: 300px;
+  resize: none;
+}

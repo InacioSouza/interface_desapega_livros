@@ -19,12 +19,46 @@ import { Livro } from "../interfaces/Livro";
                     sobrenome: 'Lewis',
                     nomeArtistico: '',
                     nacionalidade: 'Inglês'
+                },
+                {
+                    id: 1,
+                    nome: 'CS',
+                    sobrenome: 'Lewis',
+                    nomeArtistico: '',
+                    nacionalidade: 'Inglês'
+                },
+                {
+                    id: 1,
+                    nome: 'CS',
+                    sobrenome: 'Lewis',
+                    nomeArtistico: '',
+                    nacionalidade: 'Inglês'
+                },{
+                    id: 1,
+                    nome: 'CS',
+                    sobrenome: 'Lewis',
+                    nomeArtistico: '',
+                    nacionalidade: 'Inglês'
+                }
+                ,{
+                    id: 1,
+                    nome: 'CS',
+                    sobrenome: 'Lewis',
+                    nomeArtistico: '',
+                    nacionalidade: 'Inglês'
                 }
             ],
             descricao: "livro que mostra o incrível mundo de Aslan o grande leão protetor das teras de Nárnia",
             editora: { id: 1, nome: "Sextante" },
             categorias: [
-                { id: 1, nome: "Contos de fadas" }
+                { id: 1, nome: "Contos de fadas" },
+                { id: 1, nome: "Fantasia" },
+                { id: 1, nome: "Aventura" },
+                { id: 1, nome: "Ficção" },
+                { id: 1, nome: "Contos de fadas" },
+                { id: 1, nome: "Fantasia" },
+                { id: 1, nome: "Aventura" },
+                { id: 1, nome: "Ficção" }
             ],
             dtPublicacao: new Date('09 12 2005'),
             lingua: { id: 1, nome: 'Português' }

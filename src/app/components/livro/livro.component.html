@@ -1,13 +1,21 @@
+<div class="apresentacao__com__status">
+    <div class="apresentacao__livro">
+        <h2>{{ livro?.titulo }}</h2>
 
-<h2>{{ livro?.titulo }}</h2>
+        <img src="https://m.media-amazon.com/images/I/71yJLhQekBL._AC_UF1000,1000_QL80_.jpg"
+            alt=" imagem ilustrativa da capa do livro">
 
-<img src="https://m.media-amazon.com/images/I/71yJLhQekBL._AC_UF1000,1000_QL80_.jpg" alt=" imagem ilustrativa da capa do livro"> 
+        <small class="editora">Por: {{livro?.editora?.nome}}</small>
 
-<small class="editora" >Por: {{livro?.editora?.nome}}</small>
+        <!-- Aqui será redirecionado para o componente de Livro Details-->
+        <div class="opcoes__btns">
+            <button class="editar__btn" (click)="editaLivro()">Editar</button>
+            <button class="remover__btn" (click)="test()">Remover</button>
+            <button class="visualizar">visualizar</button>
+        </div>
+    </div>
 
-<!-- Aqui será redirecionado para o componente de Livro Details-->
-<button class="editar__btn" (click)="editaLivro()" >Editar</button>
-<button class="remover__btn" (click)="test()" >Remover</button>
-<button class="visualizar">Visualizar</button>
-
-
+    <div class="status">
+        <p>Doado</p>
+    </div>
+</div>

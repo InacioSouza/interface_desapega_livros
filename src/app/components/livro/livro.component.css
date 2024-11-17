@@ -1,9 +1,23 @@
+.apresentacao__com__status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apresentacao__livro {
+  width: 250px;
+  height: 350px;
+  margin: 1rem 1rem 0.5rem 1rem;
+
+  border-radius: 10px;
+  border: 3px solid #03a696;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 7px;
   color: #012e40;
 }
-
 
 img {
   display: flex;
@@ -18,10 +32,10 @@ img {
 }
 
 .editar__btn {
-  font-size: 1rem;
-  margin: 0 3px 3px 15%;
+  padding: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
   background-color: greenyellow;
-  padding: 2px;
   border-radius: 5px;
   border: none;
 }
@@ -31,27 +45,49 @@ img {
   cursor: pointer;
 }
 
-.remover__btn{
-  font-size: 1rem;
-  margin: 0 3px 3px 15%;
+.remover__btn {
+  padding: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
   background-color: red;
-  padding: 2px;
   border-radius: 5px;
   border: none;
-  text-shadow: 1px 1px 3px white;
 }
 
-.remover__btn:hover{
+.remover__btn:hover {
   background-color: rgb(207, 16, 16);
   cursor: pointer;
 }
 
-.visualizar{
-  font-size: 1rem;
-  margin: 0 3px 3px 15%;
+.visualizar {
+  padding: 4px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
   background-color: blue;
-  padding: 2px;
   border-radius: 5px;
   border: none;
-  text-shadow: 1px 1px 3px white;
+}
+
+.opcoes__btns {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+}
+
+.status {
+  height: 25px;
+  width: 220px;
+  border-radius: 10px;
+  border: 3px solid #f28705;
+
+  padding: 1px 0;
+}
+
+.status  p {
+  color: #025159;
+  font-size: 1rem;
+  font-weight: bold;
+
+  text-align: center;
 }

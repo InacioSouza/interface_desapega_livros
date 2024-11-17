@@ -8,7 +8,7 @@
         </div>
 
         <label for="capa" class="btn__carrega__img">Nova capa</label>
-        <input id="capa" type="file" accept="image/*">
+        <input id="capa__btn" type="file" accept="image/*">
     </div>
 
     <div class="titulo">
@@ -32,27 +32,72 @@
     </div>
 
     <div class="categorias">
-        <input type="text" id="nameCat" placeholder="digite uma categoria">
-        <button>adiconar</button>
-        <div class="list__categorias">
-            <div class="item__categoria" *ngFor="let categoria for livro?.categoria">
-                {{ categoria.nome }}
+
+        <h2>Adicione categorias ao livro</h2>
+
+        <div class="adiciona___categoria">
+            <input type="text" id="nameCat" placeholder="Digite uma categoria">
+            <button class="btns__alteracoes">adiconar</button>
+        </div>
+
+        <div class="list__categorias" *ngIf="livro?.categorias?.length != 0">
+            <div class="item__categoria" *ngFor="let categoria of livro?.categorias">
                 <button class="remove__btn">X</button>
+                {{ categoria.nome }}
             </div>
         </div>
     </div>
 
-    <div>
-        <input type="text" name="" id="" placeholder="Pesquise pelo nome do autor">
-        <button>adiconar</button>
+    <div class="autores">
 
-        <p>Não encontrou o autor? Cadastre-o e tente buscar novamente </p>
+        <h2>Adicione os autores do livro</h2>
 
-        <button>cadastrar autor</button>
+        <div class="adiciona__autor">
+            <input type="text" name="" id="" placeholder="Pesquise pelo nome do autor">
+            <button class="btns__alteracoes ">adiconar</button>
+        </div>
+
+        <div class="cadastrar__autor">
+            <p>Não encontrou o autor? Cadastre-o e tente buscar novamente </p>
+
+            <button>cadastrar autor</button>
+        </div>
+
+        <table class="lista__autores">
+
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Nacionalidade</th>
+                    <th>Nome Artístico</th>
+                </tr>
+            </thead>
+
+            <tr *ngFor="let autor of livro?.autores">
+                <td>
+                    {{ autor.nome + ' ' + autor.sobrenome }}
+                </td>
+
+                <td>
+                    {{ autor.nacionalidade }}
+                </td>
+
+                <td>
+                    {{ autor.nomeArtistico}}
+                </td>
+
+                <div class="gerencia__autor">
+                    <button class="editar"> editar</button>
+                    <button class="remover">remover</button>
+                </div>
+            </tr>
+
+        </table>
+
     </div>
 
     <div class="descricao">
-        <label for="descricao">Descrição: </label>
+        <label for="descricao">Descrição: </label><br>
         <textarea id="descricao" type="text" value="{{ livro?.descricao }}"></textarea>
     </div>
 

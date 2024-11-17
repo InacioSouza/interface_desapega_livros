@@ -5,7 +5,7 @@ import { ListaLivrosComponent } from './components/lista-livros/lista-livros.com
 import { TelaHomeComponent } from './components/tela-home/tela-home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home/listaLivro', pathMatch: 'full' },
   { path: 'livroDetail', component: LivroDetailComponent },
   { path: 'home', component: TelaHomeComponent, 
     children: [

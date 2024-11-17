@@ -1,0 +1,88 @@
+.livro__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+#capa {
+  display: none;
+}
+
+.btn__carrega__img {
+  background-color: #F28705;
+  color: white;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.capa__img{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 250px;
+    background-color: black;
+}
+
+.titulo{
+    width: 300px;
+}
+
+.titulo label {
+    font-size: 1.5rem;
+}
+
+.titulo input {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.editora{
+    width: 300px;
+}
+
+.editora label {
+    font-size: 1.5rem;
+}
+
+.editora input {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.idioma{
+    width: 300px;
+}
+
+
+.idioma label {
+    font-size: 1.5rem;
+}
+
+.idioma input {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.dtPublicacao{
+    width: 300px;
+}
+
+
+.dtPublicacao label {
+    font-size: 1.5rem;
+}
+
+.dtPublicacao  input {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+

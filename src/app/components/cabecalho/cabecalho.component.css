@@ -1,0 +1,54 @@
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #025159;
+
+  gap: 20px;
+  padding: 25px 0;
+}
+
+h2 {
+  color: #ec8f1e;
+  font-size: 2rem;
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: medium;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: #038c8c;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.filtro label {
+  font-size: 1.2rem;
+  color: #ec8f1e;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px black;
+}
+
+.filtro select {
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.adiciona__livro{
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 1.2rem;
+}
+

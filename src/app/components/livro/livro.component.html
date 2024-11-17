@@ -1,0 +1,13 @@
+
+<h2>{{ livro?.titulo }}</h2>
+
+<img src="https://m.media-amazon.com/images/I/71yJLhQekBL._AC_UF1000,1000_QL80_.jpg" alt=" imagem ilustrativa da capa do livro"> 
+
+<small class="editora" >Por: {{livro?.editora?.nome}}</small>
+
+<!-- Aqui será redirecionado para o componente de Livro Details-->
+<button class="editar__btn" (click)="editaLivro()" >Editar</button>
+<button class="remover__btn" (click)="test()" >Remover</button>
+<button class="visualizar">Visualizar</button>
+
+

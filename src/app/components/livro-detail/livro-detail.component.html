@@ -1,0 +1,58 @@
+<br><br><br><br><br><br><br>
+<div class="livro__detail">
+
+    <div class="capa">
+        <div class="capa__img">
+            <img src="" alt="">
+        </div>
+
+        <label for="capa" class="btn__carrega__img">Nova capa</label>
+        <input id="capa" type="file" accept="image/*">
+    </div>
+
+    <div class="titulo">
+        <label for="titulo">Título: </label><br>
+        <input id="titulo" type="text" value="{{livro?.titulo}}">
+    </div>
+
+    <div class="editora">
+        <label for="editora">Editora: </label><br>
+        <input id="editora" type="text" value="{{ livro?.editora?.nome}}">
+    </div>
+
+    <div class="idioma">
+        <label for="idioma">Idioma: </label><br>
+        <input id="idioma" type="text" value="{{ livro?.lingua?.nome }}">
+    </div>
+
+    <div class="dtPublicacao">
+        <label for="dtPublicacao">Data de publicação:</label><br>
+        <input id="dtPublicacao" type="text" value="{{ livro?.dtPublicacao}}">
+    </div>
+
+    <div class="categorias">
+        <input type="text" id="nameCat" placeholder="digite uma categoria">
+        <button>adiconar</button>
+        <div class="list__categorias">
+            <div class="item__categoria" *ngFor="let categoria for livro?.categoria">
+                {{ categoria.nome }}
+                <button class="remove__btn">X</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <input type="text" name="" id="" placeholder="Pesquise pelo nome do autor">
+        <button>adiconar</button>
+
+        <p>Não encontrou o autor? Cadastre-o e tente buscar novamente </p>
+
+        <button>cadastrar autor</button>
+    </div>
+
+    <div class="descricao">
+        <label for="descricao">Descrição: </label>
+        <textarea id="descricao" type="text" value="{{ livro?.descricao }}"></textarea>
+    </div>
+
+</div>

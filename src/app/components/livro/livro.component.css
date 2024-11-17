@@ -1,0 +1,57 @@
+h2 {
+  text-align: center;
+  margin-bottom: 7px;
+  color: #012e40;
+}
+
+
+img {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.editora {
+  display: block;
+  margin: 3px 0 3px 15%;
+  font-size: 0.9rem;
+}
+
+.editar__btn {
+  font-size: 1rem;
+  margin: 0 3px 3px 15%;
+  background-color: greenyellow;
+  padding: 2px;
+  border-radius: 5px;
+  border: none;
+}
+
+.editar__btn:hover {
+  background-color: rgb(120, 179, 32);
+  cursor: pointer;
+}
+
+.remover__btn{
+  font-size: 1rem;
+  margin: 0 3px 3px 15%;
+  background-color: red;
+  padding: 2px;
+  border-radius: 5px;
+  border: none;
+  text-shadow: 1px 1px 3px white;
+}
+
+.remover__btn:hover{
+  background-color: rgb(207, 16, 16);
+  cursor: pointer;
+}
+
+.visualizar{
+  font-size: 1rem;
+  margin: 0 3px 3px 15%;
+  background-color: blue;
+  padding: 2px;
+  border-radius: 5px;
+  border: none;
+  text-shadow: 1px 1px 3px white;
+}

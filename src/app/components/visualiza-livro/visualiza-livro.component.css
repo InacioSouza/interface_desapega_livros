@@ -1,0 +1,108 @@
+.visualiza__livro {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #F28705;
+    font-size: 2rem;
+}
+
+.visualiza__livro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #025159;
+}
+.visualiza__livro img {
+  width: 30%;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 244, 245);
+  min-height: 200px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dados__simples {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
+}
+
+.dados__simples p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.dados__simples span {
+  font-weight: normal;
+}
+
+.autores {
+  width: 600px;
+  margin: 50px 0;
+  display: flex;
+  gap: 50px;
+  background-color: rgb(243, 244, 245);
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 150px;
+}
+
+.autores ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.autores ul li {
+  display: inline;
+  background-color: white;
+  padding: 7px;
+  border-radius: 10px;
+  max-height: 30px;
+}
+
+.autores ul li:hover {
+  background-color: rgb(192, 193, 194);
+  font-weight: bold;
+}
+
+.autores a {
+  text-decoration: none;
+  color: black;
+}
+
+.categorias {
+  width: 600px;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 5%;
+}
+
+.categorias ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.categorias ul li {
+  background-color: rgb(243, 244, 245);
+  padding: 7px;
+  border-radius: 10px;
+}

@@ -8,6 +8,8 @@ import { LivroComponent } from './components/livro/livro.component';
 import { LivroDetailComponent } from './components/livro-detail/livro-detail.component';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { TelaHomeComponent } from './components/tela-home/tela-home.component';
+import { VisualizaLivroComponent } from './components/visualiza-livro/visualiza-livro.component';
+import { CadastraAutorComponent } from './components/cadastra-autor/cadastra-autor.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { TelaHomeComponent } from './components/tela-home/tela-home.component';
     LivroDetailComponent,
     CabecalhoComponent,
     TelaHomeComponent,
+    VisualizaLivroComponent,
+    CadastraAutorComponent,
   ],
   imports: [
     BrowserModule,

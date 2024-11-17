@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LivroDetailComponent } from './components/livro-detail/livro-detail.component';
 import { ListaLivrosComponent } from './components/lista-livros/lista-livros.component';
 import { TelaHomeComponent } from './components/tela-home/tela-home.component';
+import { VisualizaLivroComponent } from './components/visualiza-livro/visualiza-livro.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home/listaLivro', pathMatch: 'full' },
@@ -11,7 +12,8 @@ const routes: Routes = [
     children: [
       {path: 'listaLivro', component: ListaLivrosComponent}
     ]
-  }
+  },
+  {path: 'visualizaLivro', component: VisualizaLivroComponent}
 ];
 
 @NgModule({

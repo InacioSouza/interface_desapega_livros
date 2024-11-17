@@ -1,0 +1,37 @@
+<div class="visualiza__livro">
+
+    <h2 class="logo">Desapega Livros</h2>
+
+    <h1>{{livro?.titulo}}</h1>
+
+    <img src="https://m.media-amazon.com/images/I/71yJLhQekBL._AC_UF1000,1000_QL80_.jpg" alt="">
+
+    <p class="descricao">{{ livro?.descricao}}</p>
+
+    <div class="dados__simples">
+        <p>Editora: <span>{{livro?.editora?.nome}}</span></p>
+
+        <p>Data de publicação: <span>{{ livro?.dtPublicacao}}</span></p>
+
+        <p>Idioma: <span>{{ livro?.lingua?.nome }}</span></p>
+    </div>
+
+    <div class="autores">
+        <h2>Autores:</h2>
+
+        <ul>
+            <li *ngFor="let autor of livro?.autores">
+                <a href="">{{ autor.nome + '' + autor.sobrenome}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="categorias">
+
+        <h2>Categorias:</h2>
+
+        <ul>
+            <li *ngFor="let categoria of livro?.categorias">{{ categoria.nome }}</li>
+        </ul>
+    </div>
+</div>

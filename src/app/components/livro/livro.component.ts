@@ -22,6 +22,11 @@ export class LivroComponent implements OnInit {
     this.router.navigate(['livroDetail']);
   }
 
+  visualizaLivro(){
+    this.dataLivro.setLivro(this.livro);
+    this.router.navigate(['visualizaLivro'])
+  }
+
   test(){
     alert('Está funcionando!')
   }

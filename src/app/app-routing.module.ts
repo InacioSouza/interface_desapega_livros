@@ -8,12 +8,19 @@ import { VisualizaLivroComponent } from './components/visualiza-livro/visualiza-
 const routes: Routes = [
   { path: '', redirectTo: '/home/listaLivro', pathMatch: 'full' },
   { path: 'livroDetail', component: LivroDetailComponent },
-  { path: 'home', component: TelaHomeComponent, 
+  {
+    path: 'home', component: TelaHomeComponent,
     children: [
-      {path: 'listaLivro', component: ListaLivrosComponent}
+      { path: 'listaLivro', component: ListaLivrosComponent }
     ]
   },
-  {path: 'visualizaLivro', component: VisualizaLivroComponent}
+  { path: 'visualizaLivro', component: VisualizaLivroComponent },
+  {
+    path: 'cadastra-livro', loadChildren: () =>
+      import('./pages/cadastra-livro/cadastra-livro.component').then(
+        (m) => m.CadastraLivroModule
+      )
+  }
 ];
 
 @NgModule({

@@ -1,0 +1,34 @@
+<div class="cadastra__livro">
+
+    <div class="titulo__div">
+        <h2 class="titulo__dado">Título</h2>
+        <input class="input__simples" type="text" placeholder="Digite o título do livro">
+    </div>
+
+
+    <div class="capa__div">
+        <h2 class="titulo__dado ">Capa</h2>
+
+        <div class="espaco__img">
+            <img #exibeCapa src="{{ imgBase64 }}" alt="">
+        </div>
+
+        <label for="capa__btn" class="label__carrega__img">Carregar capa</label>
+        <input (change)="carregaCapa($event)" id="capa__btn" type="file" accept="image/*">
+    </div>
+
+    <div class="editora__div">
+        <h2 class="titulo__dado">Editora</h2>
+
+        <input class="input__simples" type="text" placeholder="Digite o nome da editora">
+    </div>
+
+    <div>
+        <h2 class="titulo__dado">Idioma</h2>
+
+        <!-- Quero criar uma espécie de cadastro de idioma mas que ao mesmo tempo pesquisa os idiomas que já existem e os mostra para ser selecionado-->
+        <idioma-select></idioma-select>
+    </div>
+
+    <br><br><br><br><br><br>
+</div>

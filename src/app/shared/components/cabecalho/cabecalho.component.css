@@ -53,3 +53,8 @@ input {
     font-size: 1.2rem;
 }
 
+.adiciona__livro:hover{
+  cursor: pointer;
+  background-color: rgb(179, 177, 177);
+}
+

@@ -1,0 +1,49 @@
+.idioma__select {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__box {
+  width: 330px;
+  border-radius: 10px;
+  padding: 4px;
+  border: 2px solid rgb(206, 207, 207);
+  font-size: 1.2rem;
+}
+
+.primeiro__item {
+  background-color: #e2e1e1;
+}
+
+.error__idioma {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  width: 330px;
+  max-height: 150px;
+  overflow-y: auto;
+
+  margin-top: 40px;
+  padding: 0;
+  list-style-type: none;
+
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown__item {
+  padding: 8px;
+}
+
+.dropdown__item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}

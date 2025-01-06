@@ -1,0 +1,14 @@
+<div class="idioma__select">
+
+    <small *ngIf="idiomaIncorreto" class="error__idioma">O idioma não pode ser vazio ou inferior a 3 caracteres</small>
+
+    <input #inputIdioma type="text" [(ngModel)]="termoDeBusca" (input)="filtraIdiomas(termoDeBusca)"
+        (keypress)="escolheIdiomaLista($event)" (blur)="testRetiraFoco()" class="input__box "
+        placeholder="Digite um idioma">
+
+    <ul *ngIf="idiomasFiltrados.size > 0" class="dropdown">
+        <li *ngFor="let idioma of idiomasFiltrados; let i = index" (click)="selecionaIdioma(idioma)"
+            class="dropdown__item" [class.primeiro__item]="i === 0">{{idioma}}</li>
+    </ul>
+
+</div>

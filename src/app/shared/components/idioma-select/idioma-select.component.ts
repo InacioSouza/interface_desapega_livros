@@ -48,7 +48,6 @@ export class IdiomaSelectComponent implements OnInit {
   }
 
   selecionaIdioma(idioma: string): void {
-    console.log(idioma)
     this.termoDeBusca = idioma;
     this.idiomaSelecionado.emit(idioma);
     this.idiomasFiltrados.clear();
@@ -67,14 +66,13 @@ export class IdiomaSelectComponent implements OnInit {
     this.inputIdioma.nativeElement.style.borderColor = 'rgb(206, 207, 207)';
   }
 
-  testRetiraFoco() {
+  limpaIdiomasFiltrados() {
 
     setTimeout(() => {
       this.idiomasFiltrados.clear();
 
       if (this.termoDeBusca === '' || this.termoDeBusca.length < 3) {
         this.idiomaIncorreto = true;
-        console.log(this.inputIdioma)
         this.inputIdioma.nativeElement.style.borderColor = 'red';
 
       } else {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Livro } from 'src/app/interfaces/Livro';
+import { Livro } from 'src/app/modelo/Livro';
 import { DataLivroService } from 'src/app/services/data-livro.service';
 
 @Component({

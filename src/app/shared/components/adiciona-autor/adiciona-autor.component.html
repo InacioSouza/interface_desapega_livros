@@ -1,0 +1,60 @@
+<div *ngIf="!exibirPopup; else cadastraAutor" class="add-autor">
+
+    <div class="input-adiciona-autor">
+        <input [(ngModel)]="termoDeBusca" (input)="filtraAutores(termoDeBusca)" (blur)="limpaAutoresFiltrados()"
+            placeholder="Digite o nome do autor" class="termo-entrada">
+
+        <button (click)="adicionaAutor()"  [class.alerta-cadastro-btn]="textoBtnAdd === 'Cadastrar' && termoDeBusca.length >= 3" class="btn-adicionar">{{textoBtnAdd}}</button>
+    </div>
+
+    <ul *ngIf="autoresFiltrados.size > 0" class="lista-sugestao">
+        <li *ngFor="let autor of autoresFiltrados" (click)="selecionaAutor(autor)">
+            <span>{{autor.nome}}
+                {{autor.sobrenome}}</span> <br> <small *ngIf="autor.nomeArtistico !== ''" class="nome-artistico">{{
+                autor.nomeArtistico
+                }}</small>
+        </li>
+    </ul>
+
+    <!--Dar um jeito de colocar os autores adicionados no início da lista e colocar uma borda com foco até clicar fora deles-->
+
+    <div *ngIf="autoresAdicionados.length > 0" class="div-autores-adicionados">
+        <div *ngFor="let autor of autoresAdicionados" class="dados-autores-adicionados">
+
+            <div class="dados-autor">
+                <div class="dado-autor-adicionado">
+                    <span>Nome</span>
+                    <div class="valor-dado">{{autor.nome}}</div>
+                </div>
+
+                <div class="dado-autor-adicionado">
+                    <span>Sobrenome</span>
+                    <div class="valor-dado">{{autor.sobrenome}}</div>
+                </div>
+
+                <div class="dado-autor-adicionado">
+                    <span class="titulo-dado">Nacionalidade</span>
+                    <div>{{autor.nacionalidade}}</div>
+                </div>
+
+                <div class="dado-autor-adicionado">
+                    <span>Nome artistico</span>
+                    <div class="valor-dado">{{autor.nomeArtistico}}</div>
+                </div>
+            </div>
+
+            <div class="btns-adm-autor">
+                <button class="btn-editar">editar</button>
+                <button (click)="removeAutor(autor)" class="btn-remover">remover</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<ng-template #cadastraAutor>
+    <popup-cadastra-autor (autorCadastrado)="cadastroAutor($event)" (sairPopup)="fecharPopup($event)" termo="{{novoAutor}}"></popup-cadastra-autor>
+</ng-template>

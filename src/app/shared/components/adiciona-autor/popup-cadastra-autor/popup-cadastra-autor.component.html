@@ -1,0 +1,35 @@
+<div class="popup-cadastro">
+
+    <h2>Cadastre o autor</h2>
+
+    <form class="cadastro-autor">
+        <div class="nome-autor dado-autor">
+            <label for="nome">Nome</label>
+            <input [(ngModel)]="nome" name="nome" id="nome" type="text" placeholder="Digite o nome do autor"
+                class="input-simples">
+        </div>
+
+        <div class="sobrenome-autor dado-autor">
+            <label for="sobrenome">Sobrenome</label>
+            <input [(ngModel)]="sobrenome" name="sobrenome" id="sobrenome" type="text"
+                placeholder="Digite o sobrenome do autor" class="input-simples">
+        </div>
+
+        <div class="nome-artistico dado-autor">
+            <label for="nome-artistico">Nome artistico</label>
+            <input [(ngModel)]="nomeArtistico" name="nome_artistico" id="nome-artistico" type="text"
+                placeholder="Digite o nome artistico do autor" class="input-simples">
+        </div>
+
+        <div class="nacionalidade-autor dado-autor">
+            <label for="nacionalidade">Nacionalidade</label>
+            <input [(ngModel)]="nacionalidade" name="nacionalidade" id="nacionalidade" type="text"
+                placeholder="Digite a nacionalidade do autor" class="input-simples">
+        </div>
+
+        <div class="btn-cadastrar">
+            <button (click)="cadastraAutor()">Cadastrar</button>
+            <button (click)="sairDoPopup()">Cancelar</button>
+        </div>
+    </form>
+</div>

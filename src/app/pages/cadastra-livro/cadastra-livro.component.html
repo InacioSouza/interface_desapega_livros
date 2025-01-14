@@ -17,7 +17,7 @@
         <input (change)="carregaCapa($event)" id="capa__btn" type="file" accept="image/*">
     </div>
 
-    <div class="editora__div">
+    <div>
         <h2 class="titulo__dado">Editora</h2>
 
         <input class="input__simples" type="text" placeholder="Digite o nome da editora">
@@ -26,9 +26,19 @@
     <div>
         <h2 class="titulo__dado">Idioma</h2>
 
-        <!-- Quero criar uma espécie de cadastro de idioma mas que ao mesmo tempo pesquisa os idiomas que já existem e os mostra para ser selecionado-->
         <idioma-select></idioma-select>
     </div>
 
+    <div>
+        <h2 class="titulo__dado">Data de publicação</h2>
+        <input type="date" max="{{dtMaxPublicacao | date:'yyyy-MM-dd'}}" class="input__simples date-input">
+    </div>
+
+    <div>
+        <h2 class="titulo__dado">Autores</h2>
+        <!-- Fazer Componente abaixo de forma semelhante ao de idiomas, digitar nome e se autor não estiver cadastrado, cadastrá-lo -->
+        
+        <adiciona-autor></adiciona-autor>
+    </div>
     <br><br><br><br><br><br>
 </div>

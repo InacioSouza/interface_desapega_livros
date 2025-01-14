@@ -1,0 +1,144 @@
+.autor-filtro-li:hover {
+  cursor: pointer;
+}
+
+.termo-entrada {
+  width: 330px;
+  border: 2px solid rgb(206, 207, 207);
+  border-radius: 10px;
+  padding: 4px;
+
+  font-size: 1.2rem;
+}
+
+.input-adiciona-autor {
+  display: flex;
+  gap: 7px;
+}
+
+.btn-adicionar {
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.btn-adicionar:hover {
+  cursor: pointer;
+  background-color: rgb(205, 207, 209);
+}
+
+.alerta-cadastro-btn {
+  background-color: rgb(2, 165, 2);
+  color: white;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.alerta-cadastro-btn:hover {
+  background-color: rgb(1, 133, 1);
+
+}
+
+.lista-sugestao {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  width: 330px;
+  max-height: 150px;
+  overflow-y: auto;
+
+  margin-top: 10px;
+  padding: 0;
+  list-style-type: none;
+
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista-sugestao li {
+  padding: 10px;
+}
+
+.lista-sugestao li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.nome-artistico {
+  font-weight: 800;
+}
+
+.div-autores-adicionados {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dados-autores-adicionados {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dados-autores-adicionados:hover {
+  background-color: rgb(241, 240, 240);
+}
+
+.dados-autor {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
+}
+
+.dado-autor-adicionado {
+  margin-bottom: 5px;
+}
+
+.valor-dado {
+  max-width: 150px;
+}
+
+.dado-autor-adicionado span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btns-adm-autor {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.btns-adm-autor button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btns-adm-autor button:hover {
+  cursor: pointer;
+}
+
+.btn-editar {
+  background-color: greenyellow;
+}
+
+.btn-editar:hover {
+  background-color: rgb(141, 209, 39);
+}
+
+.btn-remover {
+  background-color: rgb(243, 55, 55);
+}
+
+.btn-remover:hover {
+  background-color: rgb(202, 44, 44);
+}

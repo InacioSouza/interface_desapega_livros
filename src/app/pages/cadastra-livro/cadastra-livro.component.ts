@@ -1,7 +1,9 @@
-import { IdiomaSelectModule } from './../../shared/components/idioma-select/idioma-select.component';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ElementRef, ViewChild, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { IdiomaSelectModule } from './../../shared/components/idioma-select/idioma-select.component';
+import { AdicionaAutorModule } from 'src/app/shared/components/adiciona-autor/adiciona-autor.component';
 
 @Component({
   selector: 'app-cadastra-livro',
@@ -13,6 +15,8 @@ export class CadastraLivroComponent implements OnInit {
   imgBase64!: string;
 
   @ViewChild("exibeCapa") exibeCapa!: ElementRef<HTMLImageElement>;
+
+  dtMaxPublicacao: Date = new Date();
 
   constructor() { }
 
@@ -56,7 +60,7 @@ export class CadastraLivroRoutingModule { }
   imports: [CommonModule,
     CadastraLivroRoutingModule,
     IdiomaSelectModule,
-    
+    AdicionaAutorModule
   ],
   providers: []
 })
